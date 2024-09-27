@@ -22,6 +22,9 @@ module.exports = {
         gray6: '#2C2626',
         gray7: '#161313',
         gray8: '#000000'
+      },
+      gridTemplateColumns: {
+        'responsive': 'repeat(auto-fill, minmax(250px, 3fr))',
       }
     },
   },

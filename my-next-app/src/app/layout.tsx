@@ -3,6 +3,8 @@ import localFont from "next/font/local";
 import { Irish_Grover, Inria_Sans } from 'next/font/google';
 import "./globals.css";
 
+import { Button } from "@mui/material";
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -41,10 +43,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} ${irishGrover.variable} ${inriaSans.variable}`}>
-        <header className="flex items-center justify-between p-5 border">
-          <h1 className="font-grover text-2xl text-primaryOrange">Pizaroo</h1>
-          <div className="">{headerContent}</div>
-
+        <header className="flex justify-between p-5">
+          <h1 className="font-grover text-3xl text-orange6">Pizaroo</h1>
+          <div className='flex'>
+            <div className="flex items-center justify-center space-x-4">
+              <Button variant="outlined" size='small' className='border border-gray2 text-gray4'>Login</Button>
+              <Button variant="outlined" size='small' className='border border-gray2 text-gray4'>Sign up</Button>
+            </div>
+          </div>
         </header>
         {children}
       </body>
