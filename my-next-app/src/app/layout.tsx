@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Irish_Grover, Inria_Sans } from 'next/font/google';
+import Link from 'next/link';
 import "./globals.css";
 
 import { Button } from "@mui/material";
@@ -47,8 +48,8 @@ export default function RootLayout({
           <h1 className="font-grover text-3xl text-orange6">Pizaroo</h1>
           <div className='flex'>
             <div className="flex items-center justify-center space-x-4">
-              <Button variant="outlined" size='small' className='border border-gray2 text-gray4'>Login</Button>
-              <Button variant="outlined" size='small' className='border border-gray2 text-gray4'>Sign up</Button>
+              <Button variant="outlined" size='small' className='border border-gray2 text-gray4'><Link href="/login">Login</Link></Button>
+              <Button variant="outlined" size='small' className='border border-gray2 text-gray4'><Link href="/signup">Sign up</Link></Button>
             </div>
           </div>
         </header>
