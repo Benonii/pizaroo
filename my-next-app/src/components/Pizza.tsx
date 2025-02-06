@@ -4,6 +4,9 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
+import OrderPizza from './OrderPizza';
+
+import pizzaPic from '@/../public/assets/images/pizza.jpg';
 
 function Pizza() {
   return (
@@ -29,7 +32,8 @@ function Pizza() {
             <p className='text-white text-sm mt-1 mx-2'>Tomato, Mozzarella, Basil</p>
         </CardContent>
         <CardActions className='flex justify-end'>
-            <Button size='medium' className='bg-primaryOrange text-white mb-4 mr-3'>Order now</Button>
+            {/* <Button size='medium' className='bg-primaryOrange text-white mb-4 mr-3'>Order now</Button> */}
+            <OrderPizza pizzaName="Margarita Pizza" pizzaImage={pizzaPic}/>
         </CardActions>
       </Card>
     </div>

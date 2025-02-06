@@ -8,7 +8,7 @@ function page() {
         <h2 className='text-2xl text-primaryGray font-semibold'>Menu</h2>
         <hr className='mt-2 mx-3 border-gray3'/>
 
-        <div className='grid place-items-center grid-cols-1 bg-gray2 justify-center mt-5 border rounded-md border-gray3 mb-10'>
+        <div className='grid place-items-center grid-cols-1 bg-gray2 justify-center mt-5 border rounded-md border-gray3 mb-10 max-w'>
             <MenuItem />
             <MenuItem />
             <MenuItem />
